@@ -26,7 +26,7 @@ Export new Python path for later configuration (you will need to run this if you
 
 * `export PATH=$OPENSHIFT_RUNTIME_DIR/bin:$PATH`
 
-Check that new Python is used (should be `Python 2.7.3`:
+Check that new Python is used (should be `Python 2.7.3`):
 
 * `python -V`
 
