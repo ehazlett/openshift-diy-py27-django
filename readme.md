@@ -54,5 +54,5 @@ Clone / Fork this repo.
 
 Add an upstream to OpenShift:
 * Get the `Git URL` from `rhc app show -a <app_name>`
-* git remote add openshift  <GIT_URL_from_above>`
-* git push openshift master
+* `git remote add openshift <GIT_URL_from_above>`
+* `git push openshift master`
