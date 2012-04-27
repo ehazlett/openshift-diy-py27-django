@@ -56,3 +56,8 @@ Add an upstream to OpenShift:
 * Get the `Git URL` from `rhc app show -a <app_name>`
 * `git remote add openshift <GIT_URL_from_above>`
 * `git push openshift master`
+
+
+* Note
+=======
+If you change the Django application name (in the repo it's named `app`) you will also need to update the `.app_name` file with the new name in order for the OpenShift start/stop scripts to work.
