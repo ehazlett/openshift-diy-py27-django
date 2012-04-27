@@ -3,5 +3,5 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 APP_NAME=`cat $OPENSHIFT_REPO_DIR/.app_name`
-cd $OPENSHIFT_REPO_DIR/
-$OPENSHIFT_RUNTIME_DIR/bin/uwsgi --http $OPENSHIFT_INTERNAL_IP:8080 --module $APP_NAME:application --pp $OPENSHIFT_REPO_DIR/$APP_NAME -d $OPENSHIFT_LOG_DIR/app.log --pidfile $OPENSHIFT_TMP_DIR/uwsgi.pid
+cd $OPENSHIFT_REPO_DIR/$APP_NAME
+$OPENSHIFT_RUNTIME_DIR/bin/uwsgi --http $OPENSHIFT_INTERNAL_IP:8080 --module $APP_NAME.wsgi:application --pp $OPENSHIFT_REPO_DIR/$APP_NAME -d $OPENSHIFT_LOG_DIR/app.log --pidfile $OPENSHIFT_TMP_DIR/uwsgi.pid
