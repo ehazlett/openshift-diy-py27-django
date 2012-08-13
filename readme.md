@@ -49,6 +49,7 @@ Install uWSGI
 * `pip install uwsgi`
 
 Cleanup
+* `cd ~`
 * `rm -rf $OPENSHIFT_TMP_DIR/*`
 
 Application Setup
