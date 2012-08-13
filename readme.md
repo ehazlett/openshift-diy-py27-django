@@ -19,6 +19,7 @@ Download Python2.7 and extract:
 
 Build and install Python
 
+* `cd Python-2.7.3`
 * `./configure --prefix=$OPENSHIFT_RUNTIME_DIR`
 * `make ; make install`
 
