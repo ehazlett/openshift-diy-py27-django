@@ -62,6 +62,10 @@ Add an upstream to OpenShift:
 * `git remote add openshift <GIT_URL_from_above>`
 * `git push openshift master`
 
+Note: you may get an error during the git push to openshift saying the repo is not in sync.  If you don't have any changes in the OpenShift repo, you can force the push with:
+
+`git push -f openshift master`
+
 
 * Note
 =======
