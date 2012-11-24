@@ -13,6 +13,7 @@ cd Python-2.7.3
 ./configure --prefix=$OPENSHIFT_DATA_DIR
 make install
 
+# set path
 export PATH=$OPENSHIFT_DATA_DIR/bin:$PATH
 
 # install setuptools and pip
@@ -27,9 +28,6 @@ tar zxf pip-1.1.tar.gz
 cd pip-1.1
 python setup.py install
 
-# set path
-export PATH=$OPENSHIFT_DATA_DIR/bin:$PATH
-
 # install uwsgi
 pip install uwsgi
 
@@ -38,5 +36,4 @@ cd $OPENSHIFT_TMP_DIR
 rm -rf Python-2.7.3.tar.bz2
 rm -rf setuptool-0.6c11.tar.gz
 rm -rf pip-1.1.tar.gz
-
 fi
