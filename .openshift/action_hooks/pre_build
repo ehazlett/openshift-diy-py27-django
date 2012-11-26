@@ -5,7 +5,7 @@
 # could be python, php, ruby, etc.
 
 if [ ! -d $OPENSHIFT_DATA_DIR/bin ]; then
-  if [ $OPENSHIFT_DATA_DIR/bin/python -V != 'Python 2.7.3' ]; then
+  if [ "$OPENSHIFT_DATA_DIR/bin/python -V" != 'Python 2.7.3' ]; then
     # install python 2.7.3
     cd $OPENSHIFT_TMP_DIR
     wget http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
